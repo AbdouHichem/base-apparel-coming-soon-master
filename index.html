@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 </head>
+
 <body>
   <div class="card">
     <header>
@@ -17,27 +20,30 @@
       <picture>
         <source media="(min-width: 680px)" srcset="images/hero-desktop.jpg">
         <source media="(min-width: 380px)" srcset="images/hero-mobile.jpg">
-        <img src="images/hero-mobile.jpg" alt="hero image" style="width:auto;">
+        <img src="images/hero-mobile.jpg" alt="hero image">
       </picture>
     </aside>
     <div class="details">
-      <h1><span>We're</span> coming soon22</h1>
+      <h1><span>We're</span> coming soon</h1>
       <p>Hello fellow shoppers! We're currently building our new fashion store.
-      Add your email below to stay up-to-date with announcements and our launch deals.</p>
+        Add your email below to stay up-to-date with announcements and our launch deals.</p>
       <div class="formControl">
-        <input type="text" placeholder="Email Address">
+        <div class="textinput">
+          <input type="text" class="Email" placeholder="Email Address">
+          <small>Last Name is cannot be empty</small>
+        </div>
         <img src="images/icon-error.svg" alt="icon error">
-        <small>Last Name is cannot be empty</small>
-        <input type="button" class="button" value="OK">
+        <button class="button" ><img src="images/icon-arrow.svg" alt="arrow icon"></button>
       </div>
     </div>
   </div>
-   
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="https://github.com/AbdouHichem">BOUZAR Abderrahmane</a>.
     </p>
   </footer>
+  <script src="main.js"></script>
 </body>
+
 </html>

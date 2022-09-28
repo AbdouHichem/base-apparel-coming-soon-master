@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;800;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +10,96 @@ body {
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.card {
+  max-width: 360px;
+  width: 85%;
+}
+.card header img {
+  width: 40%;
+  margin: 2em 2em 1em;
+}
+.card aside {
+  margin: 1em 0em;
+}
+.card aside img {
+  width: 100%;
+  margin: 1em 0em;
+}
+.card .details {
+  text-align: center;
+}
+.card .details h1 {
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  margin: 0.5em 0;
+}
+.card .details h1 span {
+  font-weight: normal;
+  color: hsl(0deg, 36%, 70%);
+}
+.card .details p {
+  color: hsl(0deg, 36%, 70%);
+  line-height: 1.4em;
+  padding: 1em;
+}
+.card .details .formControl {
+  position: relative;
+}
+.card .details .formControl img {
+  position: absolute;
+  top: 12px;
+  right: 85px;
+}
+.card .details .formControl .hide {
+  display: none;
+}
+.card .details .formControl .textinput {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0em 1em;
+}
+.card .details .formControl .textinput small {
+  padding: 0em 1em;
+  font-size: 0.7em;
+  color: hsl(0deg, 93%, 68%);
+}
+.card .details .formControl input[type=text] {
+  width: 100%;
+  border: solid 2px hsl(0deg, 80%, 86%);
+  border-radius: 5em;
+  padding: 1em;
+  color: black;
+  margin-bottom: 0.8em;
+}
+.card .details .formControl input[type=text]::-moz-placeholder {
+  color: hsl(0deg, 80%, 86%);
+}
+.card .details .formControl input[type=text]:-ms-input-placeholder {
+  color: hsl(0deg, 80%, 86%);
+}
+.card .details .formControl input[type=text]::placeholder {
+  color: hsl(0deg, 80%, 86%);
+}
+.card .details .formControl .button {
+  position: absolute;
+  top: -2px;
+  right: 8px;
+  background: linear-gradient(to right, hsl(0deg, 80%, 86%), hsl(0deg, 74%, 74%));
+  border-radius: 5em;
+  padding: 1.75em 2.5em;
+  border: solid 2px hsl(0deg, 80%, 86%);
+  cursor: pointer;
+}
+.card .details .formControl .button:hover {
+  opacity: 0.8;
+}
+.card .details .formControl .button img {
+  top: center;
+  right: 27px;
 }
 
 .attribution {
