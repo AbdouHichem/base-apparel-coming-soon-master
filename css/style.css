@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 2ms ease-in-out;
 }
 
 body {
@@ -110,4 +111,29 @@ body {
 
 .attribution a {
   color: hsl(228deg, 45%, 44%);
+}
+
+@media only screen and (min-width: 780px) {
+  .card {
+    max-width: 800px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .card header {
+    grid-area: 1/1/2/4;
+  }
+  .card header img {
+    width: 160px;
+  }
+  .card aside {
+    grid-area: 1/4/6/7;
+  }
+  .card aside img {
+    width: 100%;
+  }
+  .card .details {
+    grid-area: 2/1/6/4;
+  }
 }/*# sourceMappingURL=style.css.map */
